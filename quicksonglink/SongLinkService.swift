@@ -43,7 +43,6 @@ final class SongLinkService {
             throw HTTPError.redirected
             
         case 400...499:
-            print(httpResponse.statusCode)
             throw HTTPError.badResponse
             
         case 500...599:

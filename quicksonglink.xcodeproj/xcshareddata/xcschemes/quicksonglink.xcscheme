@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5AF17C9328A623CE006F1B92"
-               BuildableName = "quicksonglink.app"
+               BuildableName = "SongLink.app"
                BlueprintName = "quicksonglink"
                ReferencedContainer = "container:quicksonglink.xcodeproj">
             </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AF17C9328A623CE006F1B92"
-            BuildableName = "quicksonglink.app"
+            BuildableName = "SongLink.app"
             BlueprintName = "quicksonglink"
             ReferencedContainer = "container:quicksonglink.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AF17C9328A623CE006F1B92"
-            BuildableName = "quicksonglink.app"
+            BuildableName = "SongLink.app"
             BlueprintName = "quicksonglink"
             ReferencedContainer = "container:quicksonglink.xcodeproj">
          </BuildableReference>

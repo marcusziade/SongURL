@@ -1,4 +1,4 @@
-# GoodLink macOS
+# SongLink macOS
 
 Paste a music link from any music service. The app will generate a song.link URL and copy it to your clipboard for sharing
 

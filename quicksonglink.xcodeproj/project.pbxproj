@@ -31,8 +31,9 @@
 		5A5F75F328A80B2900D39A80 /* SongLinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLinkService.swift; sourceTree = "<group>"; };
 		5A6E1A7A28A911E30022608A /* quicksonglinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quicksonglinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel_Tests.swift; sourceTree = "<group>"; };
+		5A6E1A8728A924130022608A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5AD80DC428A901ED00C73E20 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		5AF17C9428A623CE006F1B92 /* quicksonglink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quicksonglink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF17C9428A623CE006F1B92 /* SongLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quicksonglinkApp.swift; sourceTree = "<group>"; };
 		5AF17C9928A623CE006F1B92 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5AF17C9B28A623CF006F1B92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,7 +71,7 @@
 		5AF17C9528A623CE006F1B92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5AF17C9428A623CE006F1B92 /* quicksonglink.app */,
+				5AF17C9428A623CE006F1B92 /* SongLink.app */,
 				5A6E1A7A28A911E30022608A /* quicksonglinkTests.xctest */,
 			);
 			name = Products;
@@ -79,6 +80,7 @@
 		5AF17C9628A623CE006F1B92 /* quicksonglink */ = {
 			isa = PBXGroup;
 			children = (
+				5A6E1A8728A924130022608A /* Info.plist */,
 				5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */,
 				5A5F75F328A80B2900D39A80 /* SongLinkService.swift */,
 				5AF17CC228A62549006F1B92 /* LinksResponse.swift */,
@@ -127,7 +129,7 @@
 			);
 			name = quicksonglink;
 			productName = quicksonglink;
-			productReference = 5AF17C9428A623CE006F1B92 /* quicksonglink.app */;
+			productReference = 5AF17C9428A623CE006F1B92 /* SongLink.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -393,6 +395,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = quicksonglink/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,7 +403,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcusziade.quicksonglink;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SongLink;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -419,6 +422,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = quicksonglink/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -426,7 +430,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcusziade.quicksonglink;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SongLink;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

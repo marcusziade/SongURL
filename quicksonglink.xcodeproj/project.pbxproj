@@ -12,7 +12,6 @@
 		5AF17C9828A623CE006F1B92 /* quicksonglinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */; };
 		5AF17C9A28A623CE006F1B92 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9928A623CE006F1B92 /* MainView.swift */; };
 		5AF17C9C28A623CF006F1B92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF17C9B28A623CF006F1B92 /* Assets.xcassets */; };
-		5AF17C9F28A623CF006F1B92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF17C9E28A623CF006F1B92 /* Preview Assets.xcassets */; };
 		5AF17CC328A62549006F1B92 /* LinksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17CC228A62549006F1B92 /* LinksResponse.swift */; };
 		5AF17CC528A6B5B3006F1B92 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -24,7 +23,6 @@
 		5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quicksonglinkApp.swift; sourceTree = "<group>"; };
 		5AF17C9928A623CE006F1B92 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5AF17C9B28A623CF006F1B92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5AF17C9E28A623CF006F1B92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AF17CA028A623CF006F1B92 /* quicksonglink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = quicksonglink.entitlements; sourceTree = "<group>"; };
 		5AF17CC228A62549006F1B92 /* LinksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksResponse.swift; sourceTree = "<group>"; };
 		5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -68,17 +66,8 @@
 				5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */,
 				5AF17C9B28A623CF006F1B92 /* Assets.xcassets */,
 				5AF17CA028A623CF006F1B92 /* quicksonglink.entitlements */,
-				5AF17C9D28A623CF006F1B92 /* Preview Content */,
 			);
 			path = quicksonglink;
-			sourceTree = "<group>";
-		};
-		5AF17C9D28A623CF006F1B92 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				5AF17C9E28A623CF006F1B92 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +128,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AF17C9F28A623CF006F1B92 /* Preview Assets.xcassets in Resources */,
 				5AF17C9C28A623CF006F1B92 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +273,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"quicksonglink/Preview Content\"";
 				DEVELOPMENT_TEAM = P4DQK6SRKR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -312,7 +299,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"quicksonglink/Preview Content\"";
 				DEVELOPMENT_TEAM = P4DQK6SRKR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;

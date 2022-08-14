@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A5F75F428A80B2900D39A80 /* SongLinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F75F328A80B2900D39A80 /* SongLinkService.swift */; };
+		5A6E1A8428A911EF0022608A /* ViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */; };
 		5AD80DC528A901ED00C73E20 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD80DC428A901ED00C73E20 /* ResultView.swift */; };
 		5AF17C9828A623CE006F1B92 /* quicksonglinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */; };
 		5AF17C9A28A623CE006F1B92 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9928A623CE006F1B92 /* MainView.swift */; };
@@ -16,8 +17,20 @@
 		5AF17CC528A6B5B3006F1B92 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5A6E1A7E28A911E30022608A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF17C8C28A623CE006F1B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AF17C9328A623CE006F1B92;
+			remoteInfo = quicksonglink;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5A5F75F328A80B2900D39A80 /* SongLinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLinkService.swift; sourceTree = "<group>"; };
+		5A6E1A7A28A911E30022608A /* quicksonglinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quicksonglinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel_Tests.swift; sourceTree = "<group>"; };
 		5AD80DC428A901ED00C73E20 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		5AF17C9428A623CE006F1B92 /* quicksonglink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quicksonglink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quicksonglinkApp.swift; sourceTree = "<group>"; };
@@ -29,6 +42,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5A6E1A7728A911E30022608A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF17C9128A623CE006F1B92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF17C9428A623CE006F1B92 /* quicksonglink.app */,
+				5A6E1A7A28A911E30022608A /* quicksonglinkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +85,7 @@
 				5AF17C9928A623CE006F1B92 /* MainView.swift */,
 				5AD80DC428A901ED00C73E20 /* ResultView.swift */,
 				5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */,
+				5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */,
 				5AF17C9B28A623CF006F1B92 /* Assets.xcassets */,
 				5AF17CA028A623CF006F1B92 /* quicksonglink.entitlements */,
 			);
@@ -73,6 +95,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5A6E1A7928A911E30022608A /* quicksonglinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6E1A8028A911E30022608A /* Build configuration list for PBXNativeTarget "quicksonglinkTests" */;
+			buildPhases = (
+				5A6E1A7628A911E30022608A /* Sources */,
+				5A6E1A7728A911E30022608A /* Frameworks */,
+				5A6E1A7828A911E30022608A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A6E1A7F28A911E30022608A /* PBXTargetDependency */,
+			);
+			name = quicksonglinkTests;
+			productName = quicksonglinkTests;
+			productReference = 5A6E1A7A28A911E30022608A /* quicksonglinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5AF17C9328A623CE006F1B92 /* quicksonglink */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AF17CB928A623CF006F1B92 /* Build configuration list for PBXNativeTarget "quicksonglink" */;
@@ -100,6 +140,11 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					5A6E1A7928A911E30022608A = {
+						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
+						TestTargetID = 5AF17C9328A623CE006F1B92;
+					};
 					5AF17C9328A623CE006F1B92 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -119,11 +164,19 @@
 			projectRoot = "";
 			targets = (
 				5AF17C9328A623CE006F1B92 /* quicksonglink */,
+				5A6E1A7928A911E30022608A /* quicksonglinkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5A6E1A7828A911E30022608A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF17C9228A623CE006F1B92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,6 +188,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5A6E1A7628A911E30022608A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6E1A8428A911EF0022608A /* ViewModel_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF17C9028A623CE006F1B92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,7 +211,62 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5A6E1A7F28A911E30022608A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AF17C9328A623CE006F1B92 /* quicksonglink */;
+			targetProxy = 5A6E1A7E28A911E30022608A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5A6E1A8128A911E30022608A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4DQK6SRKR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusziade.quicksonglinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quicksonglink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/quicksonglink";
+			};
+			name = Debug;
+		};
+		5A6E1A8228A911E30022608A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4DQK6SRKR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusziade.quicksonglinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quicksonglink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/quicksonglink";
+			};
+			name = Release;
+		};
 		5AF17CB728A623CF006F1B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +435,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5A6E1A8028A911E30022608A /* Build configuration list for PBXNativeTarget "quicksonglinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6E1A8128A911E30022608A /* Debug */,
+				5A6E1A8228A911E30022608A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5AF17C8F28A623CE006F1B92 /* Build configuration list for PBXProject "quicksonglink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

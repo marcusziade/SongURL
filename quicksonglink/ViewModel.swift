@@ -11,7 +11,12 @@ import Foundation
 
 final class ViewModel: ObservableObject {
     
-    enum State {
+    enum State: Equatable {
+        static func == (lhs: ViewModel.State, rhs: ViewModel.State) -> Bool {
+            lhs.title == rhs.title &&
+            lhs.isSuccess == rhs.isSuccess
+        }
+        
         case loading
         case result(link: LinksResponse, message: String)
         case error(message: String)

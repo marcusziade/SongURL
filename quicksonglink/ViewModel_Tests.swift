@@ -7,7 +7,7 @@
 
 import XCTest
 
-@testable import quicksonglink
+@testable import SongLink
 
 final class ViewModel_Tests: XCTestCase {
     

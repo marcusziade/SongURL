@@ -28,6 +28,10 @@ struct LinksResponse: Codable {
         entitiesByUniqueId.first.flatMap(\.value.thumbnailUrl)
     }
     
+    var nonLocalPageURL: String {
+        pageUrl.replacingOccurrences(of: "/fi", with: "")
+    }
+    
     static var mock: LinksResponse {
         LinksResponse(
             entityUniqueId: "ITUNES_ALBUM::1480004024",

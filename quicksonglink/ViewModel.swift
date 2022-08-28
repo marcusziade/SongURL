@@ -52,7 +52,6 @@ final class ViewModel: ObservableObject {
         self.service = service
         
         $searchURL
-            .debounce(for: 0.5, scheduler: RunLoop.main)
             .sink { [unowned self] link in
                 Task { try await generate() }
             }
@@ -89,16 +88,16 @@ final class ViewModel: ObservableObject {
             state = .error(message: error.localizedDescription)
         }
     }
-    
-    func copyLinkToClipboard(_ link: LinksResponse) {
-        let pasteboard = NSPasteboard.general
-        pasteboard.declareTypes([.string], owner: self)
-        pasteboard.setString(link.pageUrl, forType: .string)
-    }
         
     // MARK: Private
     
     private let service: SongLinkService
     
     private var cancellables = Set<AnyCancellable>()
+    
+    private func copyLinkToClipboard(_ link: LinksResponse) {
+        let pasteboard = NSPasteboard.general
+        pasteboard.declareTypes([.string], owner: self)
+        pasteboard.setString(link.nonLocalPageURL, forType: .string)
+    }
 }

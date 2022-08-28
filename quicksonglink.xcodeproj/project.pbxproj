@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A2357D528BB56CD00A718FE /* LinksResponse_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2357D428BB56CD00A718FE /* LinksResponse_Tests.swift */; };
 		5A5F75F428A80B2900D39A80 /* SongLinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F75F328A80B2900D39A80 /* SongLinkService.swift */; };
 		5A6E1A8428A911EF0022608A /* ViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */; };
 		5AD80DC528A901ED00C73E20 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD80DC428A901ED00C73E20 /* ResultView.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A2357D428BB56CD00A718FE /* LinksResponse_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksResponse_Tests.swift; sourceTree = "<group>"; };
 		5A5F75F328A80B2900D39A80 /* SongLinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLinkService.swift; sourceTree = "<group>"; };
 		5A6E1A7A28A911E30022608A /* quicksonglinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quicksonglinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel_Tests.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */,
 				5A5F75F328A80B2900D39A80 /* SongLinkService.swift */,
 				5AF17CC228A62549006F1B92 /* LinksResponse.swift */,
+				5A2357D428BB56CD00A718FE /* LinksResponse_Tests.swift */,
 				5AF17C9928A623CE006F1B92 /* MainView.swift */,
 				5AD80DC428A901ED00C73E20 /* ResultView.swift */,
 				5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */,
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2357D528BB56CD00A718FE /* LinksResponse_Tests.swift in Sources */,
 				5A6E1A8428A911EF0022608A /* ViewModel_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

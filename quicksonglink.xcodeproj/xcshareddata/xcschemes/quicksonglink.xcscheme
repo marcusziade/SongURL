@@ -40,17 +40,6 @@
                ReferencedContainer = "container:quicksonglink.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5AF17CAE28A623CF006F1B92"
-               BuildableName = "quicksonglinkUITests.xctest"
-               BlueprintName = "quicksonglinkUITests"
-               ReferencedContainer = "container:quicksonglink.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

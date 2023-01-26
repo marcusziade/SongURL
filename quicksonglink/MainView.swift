@@ -1,10 +1,3 @@
-//
-//  MainView.swift
-//  quicksonglink
-//
-//  Created by Marcus Ziadé on 12.8.2022.
-//
-
 import SwiftUI
 
 struct MainView: View {
@@ -51,3 +44,4 @@ struct ContentView_Previews: PreviewProvider {
         MainView()
     }
 }
+

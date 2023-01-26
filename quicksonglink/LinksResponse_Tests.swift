@@ -1,10 +1,3 @@
-//
-//  LinksResponse_Tests.swift
-//  quicksonglinkTests
-//
-//  Created by Marcus Ziadé on 28.8.2022.
-//
-
 import XCTest
 
 @testable import SongLink
@@ -26,3 +19,4 @@ final class LinksResponse_Tests: XCTestCase {
     
     private let response = LinksResponse.mock
 }
+

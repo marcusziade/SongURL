@@ -1,10 +1,3 @@
-//
-//  ViewModel_Tests.swift
-//  quicksonglinkTests
-//
-//  Created by Marcus Ziadé on 14.8.2022.
-//
-
 import XCTest
 
 @testable import SongLink
@@ -45,3 +38,4 @@ final class ViewModel_Tests: XCTestCase {
     
     private let model = ViewModel(service: SongLinkService())
 }
+

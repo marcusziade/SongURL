@@ -1,10 +1,3 @@
-//
-//  ViewModel.swift
-//  quicksonglink
-//
-//  Created by Marcus Ziadé on 12.8.2022.
-//
-
 import AppKit
 import Combine
 import Foundation
@@ -101,3 +94,4 @@ final class ViewModel: ObservableObject {
         pasteboard.setString(link.nonLocalPageURL, forType: .string)
     }
 }
+

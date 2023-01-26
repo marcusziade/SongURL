@@ -1,10 +1,3 @@
-//
-//  ResultView.swift
-//  quicksonglink
-//
-//  Created by Marcus Ziadé on 14.8.2022.
-//
-
 import SwiftUI
 
 struct ResultView: View {
@@ -54,3 +47,4 @@ struct ResultView_Previews: PreviewProvider {
         }
     }
 }
+

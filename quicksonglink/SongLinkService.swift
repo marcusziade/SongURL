@@ -1,10 +1,3 @@
-//
-//  SongLinkService.swift
-//  quicksonglink
-//
-//  Created by Marcus Ziadé on 13.8.2022.
-//
-
 import Foundation
 
 final class SongLinkService {
@@ -79,3 +72,4 @@ enum HTTPError: Error {
         }
     }
 }
+

@@ -1,10 +1,3 @@
-//
-//  LinksResponse.swift
-//  quicksonglink
-//
-//  Created by Marcus Ziadé on 12.8.2022.
-//
-
 import Foundation
 
 struct LinksResponse: Codable {
@@ -76,3 +69,4 @@ enum TypeEnum: String, Codable {
         }
     }
 }
+

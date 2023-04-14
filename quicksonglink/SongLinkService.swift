@@ -1,7 +1,7 @@
 import Foundation
 
 final class SongLinkService {
-    
+
     func songLink(for link: String) async throws -> LinksResponse {
         var components = URLComponents()
         components.queryItems = [URLQueryItem(name: "url", value: link)]
@@ -14,33 +14,33 @@ final class SongLinkService {
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        
+
         let (data, response) = try await URLSession.shared.data(for: request)
-        
+
         guard let httpResponse = response as? HTTPURLResponse else {
             throw HTTPError.badResponse
         }
-        
+
         switch httpResponse.statusCode {
         case 100...199:
             throw HTTPError.information
-            
+
         case 200...299:
             do {
                 return try JSONDecoder().decode(LinksResponse.self, from: data)
             } catch {
                 throw error
             }
-            
+
         case 300...399:
             throw HTTPError.redirected
-            
+
         case 400...499:
             throw HTTPError.badResponse
-            
+
         case 500...599:
             throw HTTPError.serverError
-            
+
         default:
             throw HTTPError.unknownError
         }
@@ -57,7 +57,7 @@ enum HTTPError: Error {
     case unknownError
     case decodingError
     case badURL
-    
+
     var description: String {
         switch self {
         case .information: return "❌ Bad information response"
@@ -72,4 +72,3 @@ enum HTTPError: Error {
         }
     }
 }
-

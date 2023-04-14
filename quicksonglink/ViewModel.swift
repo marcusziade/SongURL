@@ -3,31 +3,30 @@ import Combine
 import Foundation
 
 final class ViewModel: ObservableObject {
-    
+
     enum State: Equatable {
         static func == (lhs: ViewModel.State, rhs: ViewModel.State) -> Bool {
-            lhs.title == rhs.title &&
-            lhs.isSuccess == rhs.isSuccess
+            lhs.title == rhs.title && lhs.isSuccess == rhs.isSuccess
         }
-        
+
         case loading
         case result(link: LinksResponse, message: String)
         case error(message: String)
         case idle
-        
+
         var title: String {
             switch self {
             case .loading:
                 return "Loading"
-            case .result(_, message: let message):
+            case .result(_, let message):
                 return message
-            case .error(message: let message):
+            case .error(let message):
                 return message
             case .idle:
                 return ""
             }
         }
-        
+
         var isSuccess: Bool {
             switch self {
             case .loading, .error(_), .idle:
@@ -37,19 +36,19 @@ final class ViewModel: ObservableObject {
             }
         }
     }
-    
+
     @Published var searchURL = ""
     @Published var state: State = .idle
-    
+
     init(service: SongLinkService) {
         self.service = service
-        
+
         $searchURL
             .sink { [unowned self] link in
                 Task { try await generate() }
             }
             .store(in: &cancellables)
-        
+
         $state
             .sink { [unowned self] state in
                 switch state {
@@ -61,15 +60,15 @@ final class ViewModel: ObservableObject {
             }
             .store(in: &cancellables)
     }
-    
+
     @MainActor func generate() async throws {
         if searchURL.isEmpty {
             state = .idle
             return
         }
-        
+
         state = .loading
-        
+
         do {
             state = .result(
                 link: try await service.songLink(for: searchURL),
@@ -81,17 +80,16 @@ final class ViewModel: ObservableObject {
             state = .error(message: error.localizedDescription)
         }
     }
-        
+
     // MARK: Private
-    
+
     private let service: SongLinkService
-    
+
     private var cancellables = Set<AnyCancellable>()
-    
+
     private func copyLinkToClipboard(_ link: LinksResponse) {
         let pasteboard = NSPasteboard.general
         pasteboard.declareTypes([.string], owner: self)
         pasteboard.setString(link.nonLocalPageURL, forType: .string)
     }
 }
-

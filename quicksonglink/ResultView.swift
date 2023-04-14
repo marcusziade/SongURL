@@ -1,15 +1,15 @@
 import SwiftUI
 
 struct ResultView: View {
-    
+
     let link: LinksResponse
     let message: String
-    
+
     var body: some View {
         VStack(spacing: 8) {
             Text(message)
                 .foregroundColor(.green)
-            
+
             AsyncImage(url: link.thumbnailURL) { image in
                 image
                     .resizable()
@@ -22,7 +22,7 @@ struct ResultView: View {
             }
             .padding(.top, 24)
             .padding(.bottom, 16)
-            
+
             Text(link.artist.capitalized)
                 .font(.largeTitle)
             Text(link.title.capitalized)
@@ -39,7 +39,7 @@ struct ResultView_Previews: PreviewProvider {
                 .frame(width: 400, height: 400)
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark mode")
-            
+
             ResultView(link: LinksResponse.mock, message: "Song.link URL copied to the clipboard")
                 .frame(width: 400, height: 400)
                 .preferredColorScheme(.light)
@@ -47,4 +47,3 @@ struct ResultView_Previews: PreviewProvider {
         }
     }
 }
-

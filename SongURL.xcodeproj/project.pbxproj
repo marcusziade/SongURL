@@ -11,7 +11,7 @@
 		5A5F75F428A80B2900D39A80 /* SongLinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F75F328A80B2900D39A80 /* SongLinkService.swift */; };
 		5A6E1A8428A911EF0022608A /* ViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */; };
 		5AD80DC528A901ED00C73E20 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD80DC428A901ED00C73E20 /* ResultView.swift */; };
-		5AF17C9828A623CE006F1B92 /* quicksonglinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */; };
+		5AF17C9828A623CE006F1B92 /* SongURLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9728A623CE006F1B92 /* SongURLApp.swift */; };
 		5AF17C9A28A623CE006F1B92 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9928A623CE006F1B92 /* MainView.swift */; };
 		5AF17C9C28A623CF006F1B92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF17C9B28A623CF006F1B92 /* Assets.xcassets */; };
 		5AF17CC328A62549006F1B92 /* LinksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17CC228A62549006F1B92 /* LinksResponse.swift */; };
@@ -31,15 +31,15 @@
 /* Begin PBXFileReference section */
 		5A2357D428BB56CD00A718FE /* LinksResponse_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksResponse_Tests.swift; sourceTree = "<group>"; };
 		5A5F75F328A80B2900D39A80 /* SongLinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLinkService.swift; sourceTree = "<group>"; };
-		5A6E1A7A28A911E30022608A /* quicksonglinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quicksonglinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6E1A7A28A911E30022608A /* SongURLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongURLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel_Tests.swift; sourceTree = "<group>"; };
 		5A6E1A8728A924130022608A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5AD80DC428A901ED00C73E20 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		5AF17C9428A623CE006F1B92 /* SongLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quicksonglinkApp.swift; sourceTree = "<group>"; };
+		5AF17C9428A623CE006F1B92 /* SongURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF17C9728A623CE006F1B92 /* SongURLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongURLApp.swift; sourceTree = "<group>"; };
 		5AF17C9928A623CE006F1B92 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5AF17C9B28A623CF006F1B92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5AF17CA028A623CF006F1B92 /* quicksonglink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = quicksonglink.entitlements; sourceTree = "<group>"; };
+		5AF17CA028A623CF006F1B92 /* SongURL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SongURL.entitlements; sourceTree = "<group>"; };
 		5AF17CC228A62549006F1B92 /* LinksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksResponse.swift; sourceTree = "<group>"; };
 		5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +65,7 @@
 		5AF17C8B28A623CE006F1B92 = {
 			isa = PBXGroup;
 			children = (
-				5AF17C9628A623CE006F1B92 /* quicksonglink */,
+				5AF17C9628A623CE006F1B92 /* SongURL */,
 				5AF17C9528A623CE006F1B92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,17 +73,17 @@
 		5AF17C9528A623CE006F1B92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5AF17C9428A623CE006F1B92 /* SongLink.app */,
-				5A6E1A7A28A911E30022608A /* quicksonglinkTests.xctest */,
+				5AF17C9428A623CE006F1B92 /* SongURL.app */,
+				5A6E1A7A28A911E30022608A /* SongURLTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5AF17C9628A623CE006F1B92 /* quicksonglink */ = {
+		5AF17C9628A623CE006F1B92 /* SongURL */ = {
 			isa = PBXGroup;
 			children = (
 				5A6E1A8728A924130022608A /* Info.plist */,
-				5AF17C9728A623CE006F1B92 /* quicksonglinkApp.swift */,
+				5AF17C9728A623CE006F1B92 /* SongURLApp.swift */,
 				5A5F75F328A80B2900D39A80 /* SongLinkService.swift */,
 				5AF17CC228A62549006F1B92 /* LinksResponse.swift */,
 				5A2357D428BB56CD00A718FE /* LinksResponse_Tests.swift */,
@@ -92,17 +92,17 @@
 				5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */,
 				5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */,
 				5AF17C9B28A623CF006F1B92 /* Assets.xcassets */,
-				5AF17CA028A623CF006F1B92 /* quicksonglink.entitlements */,
+				5AF17CA028A623CF006F1B92 /* SongURL.entitlements */,
 			);
-			path = quicksonglink;
+			path = SongURL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A6E1A7928A911E30022608A /* quicksonglinkTests */ = {
+		5A6E1A7928A911E30022608A /* SongURLTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A6E1A8028A911E30022608A /* Build configuration list for PBXNativeTarget "quicksonglinkTests" */;
+			buildConfigurationList = 5A6E1A8028A911E30022608A /* Build configuration list for PBXNativeTarget "SongURLTests" */;
 			buildPhases = (
 				5A6E1A7628A911E30022608A /* Sources */,
 				5A6E1A7728A911E30022608A /* Frameworks */,
@@ -113,14 +113,14 @@
 			dependencies = (
 				5A6E1A7F28A911E30022608A /* PBXTargetDependency */,
 			);
-			name = quicksonglinkTests;
+			name = SongURLTests;
 			productName = quicksonglinkTests;
-			productReference = 5A6E1A7A28A911E30022608A /* quicksonglinkTests.xctest */;
+			productReference = 5A6E1A7A28A911E30022608A /* SongURLTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5AF17C9328A623CE006F1B92 /* quicksonglink */ = {
+		5AF17C9328A623CE006F1B92 /* SongURL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AF17CB928A623CF006F1B92 /* Build configuration list for PBXNativeTarget "quicksonglink" */;
+			buildConfigurationList = 5AF17CB928A623CF006F1B92 /* Build configuration list for PBXNativeTarget "SongURL" */;
 			buildPhases = (
 				5AF17C9028A623CE006F1B92 /* Sources */,
 				5AF17C9128A623CE006F1B92 /* Frameworks */,
@@ -130,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = quicksonglink;
+			name = SongURL;
 			productName = quicksonglink;
-			productReference = 5AF17C9428A623CE006F1B92 /* SongLink.app */;
+			productReference = 5AF17C9428A623CE006F1B92 /* SongURL.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5AF17C8F28A623CE006F1B92 /* Build configuration list for PBXProject "quicksonglink" */;
+			buildConfigurationList = 5AF17C8F28A623CE006F1B92 /* Build configuration list for PBXProject "SongURL" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,8 +168,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5AF17C9328A623CE006F1B92 /* quicksonglink */,
-				5A6E1A7928A911E30022608A /* quicksonglinkTests */,
+				5AF17C9328A623CE006F1B92 /* SongURL */,
+				5A6E1A7928A911E30022608A /* SongURLTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,7 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AF17C9A28A623CE006F1B92 /* MainView.swift in Sources */,
-				5AF17C9828A623CE006F1B92 /* quicksonglinkApp.swift in Sources */,
+				5AF17C9828A623CE006F1B92 /* SongURLApp.swift in Sources */,
 				5AF17CC528A6B5B3006F1B92 /* ViewModel.swift in Sources */,
 				5A5F75F428A80B2900D39A80 /* SongLinkService.swift in Sources */,
 				5AD80DC528A901ED00C73E20 /* ResultView.swift in Sources */,
@@ -220,7 +220,7 @@
 /* Begin PBXTargetDependency section */
 		5A6E1A7F28A911E30022608A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5AF17C9328A623CE006F1B92 /* quicksonglink */;
+			target = 5AF17C9328A623CE006F1B92 /* SongURL */;
 			targetProxy = 5A6E1A7E28A911E30022608A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -391,7 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = quicksonglink/quicksonglink.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SongURL/SongURL.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -399,7 +399,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = quicksonglink/Info.plist;
+				INFOPLIST_FILE = SongURL/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,8 +407,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.marcusziade.quicksonglink;
-				PRODUCT_NAME = SongLink;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusziade.SongURL;
+				PRODUCT_NAME = SongURL;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -419,7 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = quicksonglink/quicksonglink.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SongURL/SongURL.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -427,7 +427,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = quicksonglink/Info.plist;
+				INFOPLIST_FILE = SongURL/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -435,8 +435,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.marcusziade.quicksonglink;
-				PRODUCT_NAME = SongLink;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusziade.SongURL;
+				PRODUCT_NAME = SongURL;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -445,7 +445,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A6E1A8028A911E30022608A /* Build configuration list for PBXNativeTarget "quicksonglinkTests" */ = {
+		5A6E1A8028A911E30022608A /* Build configuration list for PBXNativeTarget "SongURLTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A6E1A8128A911E30022608A /* Debug */,
@@ -454,7 +454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AF17C8F28A623CE006F1B92 /* Build configuration list for PBXProject "quicksonglink" */ = {
+		5AF17C8F28A623CE006F1B92 /* Build configuration list for PBXProject "SongURL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AF17CB728A623CF006F1B92 /* Debug */,
@@ -463,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AF17CB928A623CF006F1B92 /* Build configuration list for PBXNativeTarget "quicksonglink" */ = {
+		5AF17CB928A623CF006F1B92 /* Build configuration list for PBXNativeTarget "SongURL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AF17CBA28A623CF006F1B92 /* Debug */,

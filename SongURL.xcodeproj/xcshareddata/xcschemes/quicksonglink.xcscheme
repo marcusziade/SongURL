@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5AF17C9328A623CE006F1B92"
-               BuildableName = "SongLink.app"
-               BlueprintName = "quicksonglink"
-               ReferencedContainer = "container:quicksonglink.xcodeproj">
+               BuildableName = "SongURL.app"
+               BlueprintName = "SongURL"
+               ReferencedContainer = "container:SongURL.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5A6E1A7928A911E30022608A"
-               BuildableName = "quicksonglinkTests.xctest"
-               BlueprintName = "quicksonglinkTests"
-               ReferencedContainer = "container:quicksonglink.xcodeproj">
+               BuildableName = "SongURLTests.xctest"
+               BlueprintName = "SongURLTests"
+               ReferencedContainer = "container:SongURL.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AF17C9328A623CE006F1B92"
-            BuildableName = "SongLink.app"
-            BlueprintName = "quicksonglink"
-            ReferencedContainer = "container:quicksonglink.xcodeproj">
+            BuildableName = "SongURL.app"
+            BlueprintName = "SongURL"
+            ReferencedContainer = "container:SongURL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -74,9 +74,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5AF17C9328A623CE006F1B92"
-            BuildableName = "SongLink.app"
-            BlueprintName = "quicksonglink"
-            ReferencedContainer = "container:quicksonglink.xcodeproj">
+            BuildableName = "SongURL.app"
+            BlueprintName = "SongURL"
+            ReferencedContainer = "container:SongURL.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

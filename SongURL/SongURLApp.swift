@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct quicksonglinkApp: App {
+struct SongURL: App {
     var body: some Scene {
         WindowGroup {
             MainView()

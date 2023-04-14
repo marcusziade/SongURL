@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import SongLink
+@testable import SongURL
 
 final class ViewModel_Tests: XCTestCase {
 

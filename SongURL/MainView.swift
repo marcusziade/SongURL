@@ -36,6 +36,7 @@ struct MainView: View {
         }
         .frame(width: 600, height: model.state.isSuccess ? 490 : 150)
         .padding()
+        .onAppear(perform: model.useLinkInClipboard)
     }
 }
 

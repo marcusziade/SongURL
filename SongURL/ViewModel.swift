@@ -80,6 +80,11 @@ final class ViewModel: ObservableObject {
             state = .error(message: error.localizedDescription)
         }
     }
+    
+    @MainActor func useLinkInClipboard() {
+        let pasteboard = NSPasteboard.general
+        searchURL = pasteboard.string(forType: .string) ?? ""
+    }
 
     // MARK: Private
 

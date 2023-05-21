@@ -18,6 +18,9 @@
 		5A801C232A19F5DB006F0BFD /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD80DC428A901ED00C73E20 /* ResultView.swift */; };
 		5A801C252A19F5DB006F0BFD /* SongURLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9728A623CE006F1B92 /* SongURLApp.swift */; };
 		5A801C262A19F5DB006F0BFD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */; };
+		5A801C2F2A1A09C1006F0BFD /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A801C2E2A1A09C1006F0BFD /* ShareViewController.swift */; };
+		5A801C322A1A09C1006F0BFD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A801C302A1A09C1006F0BFD /* MainInterface.storyboard */; };
+		5A801C362A1A09C1006F0BFD /* songlink-ios-share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5A801C2C2A1A09C1006F0BFD /* songlink-ios-share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5AD80DC528A901ED00C73E20 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD80DC428A901ED00C73E20 /* ResultView.swift */; };
 		5AF17C9828A623CE006F1B92 /* SongURLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9728A623CE006F1B92 /* SongURLApp.swift */; };
 		5AF17C9A28A623CE006F1B92 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9928A623CE006F1B92 /* MainView.swift */; };
@@ -34,7 +37,28 @@
 			remoteGlobalIDString = 5AF17C9328A623CE006F1B92;
 			remoteInfo = quicksonglink;
 		};
+		5A801C342A1A09C1006F0BFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF17C8C28A623CE006F1B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A801C2B2A1A09C1006F0BFD;
+			remoteInfo = "songlink-ios-share";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A801C3A2A1A09C1006F0BFD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A801C362A1A09C1006F0BFD /* songlink-ios-share.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5A2357D428BB56CD00A718FE /* LinksResponse_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksResponse_Tests.swift; sourceTree = "<group>"; };
@@ -45,6 +69,11 @@
 		5A801C112A19F5C8006F0BFD /* songlink-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "songlink-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A801C172A19F5C9006F0BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A801C1A2A19F5C9006F0BFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A801C2C2A1A09C1006F0BFD /* songlink-ios-share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "songlink-ios-share.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A801C2E2A1A09C1006F0BFD /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5A801C312A1A09C1006F0BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5A801C332A1A09C1006F0BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A801C3B2A1A18C0006F0BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5AD80DC428A901ED00C73E20 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		5AF17C9428A623CE006F1B92 /* SongURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF17C9728A623CE006F1B92 /* SongURLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongURLApp.swift; sourceTree = "<group>"; };
@@ -70,6 +99,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A801C292A1A09C1006F0BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF17C9128A623CE006F1B92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,6 +119,7 @@
 		5A801C122A19F5C8006F0BFD /* songlink-ios */ = {
 			isa = PBXGroup;
 			children = (
+				5A801C3B2A1A18C0006F0BFD /* Info.plist */,
 				5A801C172A19F5C9006F0BFD /* Assets.xcassets */,
 				5A801C192A19F5C9006F0BFD /* Preview Content */,
 			);
@@ -112,12 +149,23 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		5A801C2D2A1A09C1006F0BFD /* songlink-ios-share */ = {
+			isa = PBXGroup;
+			children = (
+				5A801C2E2A1A09C1006F0BFD /* ShareViewController.swift */,
+				5A801C302A1A09C1006F0BFD /* MainInterface.storyboard */,
+				5A801C332A1A09C1006F0BFD /* Info.plist */,
+			);
+			path = "songlink-ios-share";
+			sourceTree = "<group>";
+		};
 		5AF17C8B28A623CE006F1B92 = {
 			isa = PBXGroup;
 			children = (
 				5A801C272A19F63F006F0BFD /* Shared */,
 				5AF17C9628A623CE006F1B92 /* SongURL */,
 				5A801C122A19F5C8006F0BFD /* songlink-ios */,
+				5A801C2D2A1A09C1006F0BFD /* songlink-ios-share */,
 				5AF17C9528A623CE006F1B92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +176,7 @@
 				5AF17C9428A623CE006F1B92 /* SongURL.app */,
 				5A6E1A7A28A911E30022608A /* SongURLTests.xctest */,
 				5A801C112A19F5C8006F0BFD /* songlink-ios.app */,
+				5A801C2C2A1A09C1006F0BFD /* songlink-ios-share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,15 +219,34 @@
 				5A801C0D2A19F5C8006F0BFD /* Sources */,
 				5A801C0E2A19F5C8006F0BFD /* Frameworks */,
 				5A801C0F2A19F5C8006F0BFD /* Resources */,
+				5A801C3A2A1A09C1006F0BFD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5A801C352A1A09C1006F0BFD /* PBXTargetDependency */,
 			);
 			name = "songlink-ios";
 			productName = "songlink-ios";
 			productReference = 5A801C112A19F5C8006F0BFD /* songlink-ios.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5A801C2B2A1A09C1006F0BFD /* songlink-ios-share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A801C372A1A09C1006F0BFD /* Build configuration list for PBXNativeTarget "songlink-ios-share" */;
+			buildPhases = (
+				5A801C282A1A09C1006F0BFD /* Sources */,
+				5A801C292A1A09C1006F0BFD /* Frameworks */,
+				5A801C2A2A1A09C1006F0BFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "songlink-ios-share";
+			productName = "songlink-ios-share";
+			productReference = 5A801C2C2A1A09C1006F0BFD /* songlink-ios-share.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		5AF17C9328A623CE006F1B92 /* SongURL */ = {
 			isa = PBXNativeTarget;
@@ -215,6 +283,9 @@
 					5A801C102A19F5C8006F0BFD = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					5A801C2B2A1A09C1006F0BFD = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					5AF17C9328A623CE006F1B92 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -236,6 +307,7 @@
 				5AF17C9328A623CE006F1B92 /* SongURL */,
 				5A6E1A7928A911E30022608A /* SongURLTests */,
 				5A801C102A19F5C8006F0BFD /* songlink-ios */,
+				5A801C2B2A1A09C1006F0BFD /* songlink-ios-share */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +326,14 @@
 			files = (
 				5A801C1B2A19F5C9006F0BFD /* Preview Assets.xcassets in Resources */,
 				5A801C182A19F5C9006F0BFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A801C2A2A1A09C1006F0BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A801C322A1A09C1006F0BFD /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +370,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A801C282A1A09C1006F0BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A801C2F2A1A09C1006F0BFD /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF17C9028A623CE006F1B92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,7 +399,23 @@
 			target = 5AF17C9328A623CE006F1B92 /* SongURL */;
 			targetProxy = 5A6E1A7E28A911E30022608A /* PBXContainerItemProxy */;
 		};
+		5A801C352A1A09C1006F0BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A801C2B2A1A09C1006F0BFD /* songlink-ios-share */;
+			targetProxy = 5A801C342A1A09C1006F0BFD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A801C302A1A09C1006F0BFD /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A801C312A1A09C1006F0BFD /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5A6E1A8128A911E30022608A /* Debug */ = {
@@ -364,6 +468,7 @@
 		5A801C1D2A19F5C9006F0BFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -372,6 +477,7 @@
 				DEVELOPMENT_TEAM = P4DQK6SRKR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "songlink-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -395,6 +501,7 @@
 		5A801C1E2A19F5C9006F0BFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -403,6 +510,7 @@
 				DEVELOPMENT_TEAM = P4DQK6SRKR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "songlink-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -417,6 +525,61 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marcusziade.songlink-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A801C382A1A09C1006F0BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4DQK6SRKR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "songlink-ios-share/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "songlink-ios-share";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcusziade.songlink-ios.songlink-ios-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A801C392A1A09C1006F0BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4DQK6SRKR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "songlink-ios-share/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "songlink-ios-share";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcusziade.songlink-ios.songlink-ios-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -620,6 +783,15 @@
 			buildConfigurations = (
 				5A801C1D2A19F5C9006F0BFD /* Debug */,
 				5A801C1E2A19F5C9006F0BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A801C372A1A09C1006F0BFD /* Build configuration list for PBXNativeTarget "songlink-ios-share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A801C382A1A09C1006F0BFD /* Debug */,
+				5A801C392A1A09C1006F0BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

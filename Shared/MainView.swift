@@ -21,8 +21,10 @@ struct MainView: View {
             switch model.state {
             case .loading:
                 ProgressView()
+#if os(macOS)
                     .progressViewStyle(.linear)
                     .frame(width: 150)
+#endif
                 Text(model.state.title)
 
             case .error(let message):

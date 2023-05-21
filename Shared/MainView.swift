@@ -6,8 +6,12 @@ struct MainView: View {
 
     var body: some View {
         VStack(spacing: 16) {
+            #if os(iOS)
+            Spacer()
+            #endif
+            
             TextField("Link", text: $model.searchURL)
-
+                .multilineTextAlignment(.center)
             Button {
                 Task { try await model.generate() }
             } label: {
@@ -34,9 +38,10 @@ struct MainView: View {
 
             Spacer()
         }
+        #if os(macOS)
         .frame(width: 600, height: model.state.isSuccess ? 490 : 150)
+        #endif
         .padding()
-        .onAppear(perform: model.useLinkInClipboard)
     }
 }
 

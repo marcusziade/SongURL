@@ -1,4 +1,8 @@
+#if os(macOS)
 import AppKit
+#else
+import UIKit
+#endif
 import Combine
 import Foundation
 
@@ -42,7 +46,9 @@ final class ViewModel: ObservableObject {
 
     init(service: SongLinkService) {
         self.service = service
-
+        
+        useLinkInClipboard()
+        
         $searchURL
             .sink { [unowned self] link in
                 Task { try await generate() }
@@ -51,14 +57,13 @@ final class ViewModel: ObservableObject {
 
         $state
             .sink { [unowned self] state in
-                switch state {
-                case .result(let link, _):
+                if case .result(let link, _) = state {
                     copyLinkToClipboard(link)
-                default:
-                    break
                 }
             }
             .store(in: &cancellables)
+        
+        listenForAppBecomingActive()
     }
 
     @MainActor func generate() async throws {
@@ -81,20 +86,46 @@ final class ViewModel: ObservableObject {
         }
     }
     
-    @MainActor func useLinkInClipboard() {
+    private func useLinkInClipboard() {
+#if os(macOS)
         let pasteboard = NSPasteboard.general
         searchURL = pasteboard.string(forType: .string) ?? ""
+#else
+        let pasteboard = UIPasteboard.general
+        searchURL = pasteboard.string ?? ""
+#endif
     }
-
+    
     // MARK: Private
 
     private let service: SongLinkService
 
     private var cancellables = Set<AnyCancellable>()
-
+    
     private func copyLinkToClipboard(_ link: LinksResponse) {
+#if os(macOS)
         let pasteboard = NSPasteboard.general
         pasteboard.declareTypes([.string], owner: self)
         pasteboard.setString(link.nonLocalPageURL, forType: .string)
+#else
+        let pasteboard = UIPasteboard.general
+        pasteboard.setValue(link.nonLocalPageURL, forPasteboardType: "public.text")
+#endif
+    }
+    
+    private func listenForAppBecomingActive() {
+#if os(macOS)
+        NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)
+            .sink { [unowned self] _ in
+                useLinkInClipboard()
+            }
+            .store(in: &cancellables)
+#else
+        NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)
+            .sink { [unowned self] _ in
+                useLinkInClipboard()
+            }
+            .store(in: &cancellables)
+#endif
     }
 }

@@ -2,6 +2,11 @@ import Foundation
 
 final class SongLinkService {
 
+    static var mockLinks: LinksResponse {
+        let mock: LinksResponse = try! SongLinkService().getMockData(forFileName: "songlink_mock", filetype: "json")
+        return mock
+    }
+    
     func songLink(for link: String) async throws -> LinksResponse {
         var components = URLComponents()
         components.queryItems = [URLQueryItem(name: "url", value: link)]
@@ -43,6 +48,48 @@ final class SongLinkService {
 
         default:
             throw HTTPError.unknownError
+        }
+    }
+
+    func getMockData<T: Codable>(forFileName fileName: String, filetype: String) throws -> T {
+        guard let path = Bundle.main.path(forResource: fileName, ofType: filetype) else {
+            throw MockError.path
+        }
+        
+        let url = URL(fileURLWithPath: path)
+        let data: Data
+        do {
+            data = try Data(contentsOf: url)
+        } catch {
+            throw MockError.data
+        }
+        
+        do {
+            return try jsonDecoder.decode(T.self, from: data)
+        } catch {
+            throw MockError.decode
+        }
+    }
+    
+    // MARK: Private
+    
+    private let jsonDecoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        return decoder
+    }()
+}
+
+enum MockError: Error {
+    case path, data, decode
+
+    var description: String {
+        switch self {
+        case .path:
+            return "Path not found"
+        case .data:
+            return "Failed to create data from URL"
+        case .decode:
+            return "Failed to decode mock data"
         }
     }
 }

@@ -32,7 +32,28 @@ struct MainView: View {
                     .foregroundColor(.red)
 
             case .result(let link, let message):
-                ResultView(link: link, message: message)
+                ScrollView {
+                    VStack(spacing: 24) {
+                        ResultView(link: link, message: message)
+                        
+#if os(macOS)
+                        let columnCount = 4
+#else
+                        let columnCount = 2
+#endif
+                        let columns: [GridItem] = Array(repeating: .init(.flexible()), count: columnCount)
+                        
+                        LazyVGrid(columns: columns, alignment: .leading) {
+                            ForEach(Array(zip(link.availablePlatformTitles, link.availablePlatformUrls)), id: \.0) { platformTitle, platformURL in
+                                Button {
+                                    // TODO: Copy platform url to clipboard with model method.
+                                } label: {
+                                    Text(platformTitle)
+                                }
+                            }
+                        }
+                    }
+                }
 
             case .idle:
                 EmptyView()
@@ -41,9 +62,8 @@ struct MainView: View {
             Spacer()
         }
         #if os(macOS)
-        .frame(width: 600, height: model.state.isSuccess ? 490 : 150)
+        .frame(width: 600, height: model.state.isSuccess ? 600 : 150)
         #endif
-        .padding()
     }
 }
 

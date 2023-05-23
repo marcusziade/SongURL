@@ -35,12 +35,12 @@ struct ResultView: View {
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ResultView(link: LinksResponse.mock, message: "Song.link URL copied to the clipboard")
+            ResultView(link: SongLinkService.mockLinks, message: "Song.link URL copied to the clipboard")
                 .frame(width: 400, height: 400)
                 .preferredColorScheme(.dark)
                 .previewDisplayName("Dark mode")
 
-            ResultView(link: LinksResponse.mock, message: "Song.link URL copied to the clipboard")
+            ResultView(link: SongLinkService.mockLinks, message: "Song.link URL copied to the clipboard")
                 .frame(width: 400, height: 400)
                 .preferredColorScheme(.light)
                 .previewDisplayName("Light mode")

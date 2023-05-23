@@ -18,6 +18,7 @@
 		5A801C232A19F5DB006F0BFD /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD80DC428A901ED00C73E20 /* ResultView.swift */; };
 		5A801C252A19F5DB006F0BFD /* SongURLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9728A623CE006F1B92 /* SongURLApp.swift */; };
 		5A801C262A19F5DB006F0BFD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */; };
+		5A94E5012A1D365A00F6ECF1 /* songlink_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A94E5002A1D365A00F6ECF1 /* songlink_mock.json */; };
 		5AD80DC528A901ED00C73E20 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD80DC428A901ED00C73E20 /* ResultView.swift */; };
 		5AF17C9828A623CE006F1B92 /* SongURLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9728A623CE006F1B92 /* SongURLApp.swift */; };
 		5AF17C9A28A623CE006F1B92 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF17C9928A623CE006F1B92 /* MainView.swift */; };
@@ -45,6 +46,7 @@
 		5A801C112A19F5C8006F0BFD /* songlink-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "songlink-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A801C172A19F5C9006F0BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A801C1A2A19F5C9006F0BFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A94E5002A1D365A00F6ECF1 /* songlink_mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = songlink_mock.json; sourceTree = "<group>"; };
 		5AD80DC428A901ED00C73E20 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		5AF17C9428A623CE006F1B92 /* SongURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF17C9728A623CE006F1B92 /* SongURLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongURLApp.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				5AD80DC428A901ED00C73E20 /* ResultView.swift */,
 				5AF17CC428A6B5B3006F1B92 /* ViewModel.swift */,
 				5A6E1A8328A911EF0022608A /* ViewModel_Tests.swift */,
+				5A94E5002A1D365A00F6ECF1 /* songlink_mock.json */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A94E5012A1D365A00F6ECF1 /* songlink_mock.json in Resources */,
 				5AF17C9C28A623CF006F1B92 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

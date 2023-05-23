@@ -3,19 +3,19 @@ import XCTest
 @testable import SongURL
 
 final class LinksResponse_Tests: XCTestCase {
-
+    
     func testNonLocalURLGeneration() {
         XCTAssertFalse(response.nonLocalPageURL.contains("/fi"))
     }
-
+    
     func testProperties() {
-        XCTAssertTrue(response.artist.contains("deadmau5"))
-        XCTAssertTrue(response.title.contains("here's the drop!"))
-        XCTAssertEqual(response.type, .album)
-        XCTAssertEqual(response.type.icon, "rectangle.stack")
+        XCTAssertTrue(response.artist.contains("Brandberg"))
+        XCTAssertTrue(response.title.contains("Anubis"))
+        XCTAssertEqual(response.type, .song)
+        XCTAssertEqual(response.type.icon, "music.note")
     }
-
+    
     // MARK: Private
-
-    private let response = LinksResponse.mock
+    
+    private let response = SongLinkService.mockLinks
 }
